@@ -1,10 +1,5 @@
-body{
-    overflow-x: hidden;
-}
-.background{
-}
+
 #main{
-    overflow-x: hidden;
     background-color: #c9ccf5;
     width: 95%;
     height: 850px;
@@ -13,12 +8,10 @@ body{
     margin-top: -430px;
     margin-left: 140px;
     border-radius: 50px;
-    position: fixed;
+    position: absolute;
     z-index: 2;
 }
 #main2{
-    overflow-x: hidden;
-
     background-color:#a7acf2;
     width: 100%;
     height: 800px;
@@ -27,11 +20,10 @@ body{
     margin-top: -405px;
     margin-left: -30px;;
     border-radius: 50px;
-    position: fixed;
+    position: absolute;
     z-index: 3;
 }
 #main3{
-    overflow-x: hidden;
     background-color:#7B7CE8;
     width: 100%;
     height: 800px;
@@ -40,11 +32,10 @@ body{
     margin-top: -350px;
     margin-left: 30px;
     border-radius: 50px;
-    position: fixed;
+    position: absolute;
     z-index: 5;
 }
 #main4{
-    overflow-x: hidden;
     background-color: #7a78f0;
     width: 100%;
     height: 870px;
@@ -52,7 +43,7 @@ body{
     margin-top: -575px;
     box-shadow: 0 0 2px 2px #8b8b8f;
     border-radius: 30px;
-    position: fixed;
+    position: absolute;
     z-index: 5;
 }
 .name{
@@ -144,16 +135,28 @@ input{
 }
 
 @media only screen and (max-width: 992px) {
+    html {
+        margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative;
+      }
+      body {
+        margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative;
+      }
+      
     .row .text{
         position: absolute;
         top: 600px;
-        color:#7B7CE8;
+        color: #7a78f0;
         z-index: 10;
         text-align: center;
         font-size: 200%;
         margin-left: auto;
         margin-right: auto;
-
 
     }
     .row .box{
@@ -172,7 +175,7 @@ input{
         margin-top: -430px;
         margin-left: 40px;
         border-radius: 50px;
-        position: fixed;
+        position: absolute;
         z-index: 2;
     }
     #main2{
@@ -184,7 +187,7 @@ input{
         margin-top: -405px;
         margin-left: -30px;;
         border-radius: 50px;
-        position: fixed;
+        position: absolute;
         z-index: 3;
     }
     #main3{
@@ -196,7 +199,7 @@ input{
         margin-top: -300px;
         margin-left: 30px;
         border-radius: 50px;
-        position: fixed;
+        position: absolute;
         z-index: 5;
     }
     #main4{
@@ -207,7 +210,7 @@ input{
         margin-top: -700px;
         box-shadow: 0 0 2px 2px #8b8b8f;
         border-radius: 30px;
-        position: fixed;
+        position: absolute;
         z-index: 5;
     }
     .info{
@@ -218,9 +221,11 @@ input{
     }
     }
     @media only screen and (max-width: 430px) {
+
     .row .box{
         width: 80%;
-        margin-left: 10%;
+        margin-left:7%;
+        margin-right: auto;
         
     }
     .login{
